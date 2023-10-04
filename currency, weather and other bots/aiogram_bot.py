@@ -7,7 +7,7 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=["start"])
 async def start(message: types.Message):
     await message.reply("I tebe Halo")
-    file = open("fiord.jpg", "rb")
+    file = open("../fiord.jpg", "rb")
     await message.answer_photo(file, "Give a photo!")
 
 
